@@ -6,21 +6,25 @@ console.log(result);
 
 function leapYear(year) {
   if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-    return true;
+    // return true;
+    console.log(year + "年はうるう年です");
   } else {
-    return false;
+    console.log(year + "年はうるう年ではありません");
+    // return false;
   }
 }
+leapYear(2020);
+leapYear(2021);
 
-let lastYear = 2020;
-if(leapYear(lastYear)){
-  console.log(lastYear + "年はうるう年です");
-}else{
-  console.log(lastYear + "年はうるう年ではありません");
-}
-let thisYear = 2021;
-if(leapYear(thisYear)){
-  console.log(thisYear　+ "年はうるう年です");
-}else{
-  console.log(thisYear + "年はうるう年ではありません");
-}
+// let lastYear = 2020;
+// if(leapYear(lastYear)){
+//   console.log(lastYear + "年はうるう年です");
+// }else{
+//   console.log(lastYear + "年はうるう年ではありません");
+// }
+// let thisYear = 2021;
+// if(leapYear(thisYear)){
+//   console.log(thisYear　+ "年はうるう年です");
+// }else{
+//   console.log(thisYear + "年はうるう年ではありません");
+// }
